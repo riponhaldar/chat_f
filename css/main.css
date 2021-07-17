@@ -90,13 +90,11 @@
     cursor: pointer;
     display: block;
     position: absolute;
-    right: -20px;
-    width: 50px;
-    height: 70px;
-    top: 47%;
+    right: -30px;
+    top: 0;
+    z-index: 0;
     font-size: 3rem;
-    background: #ffc6fc;
-    border-radius: 50%;
+    color: #686868;
   }
 }
 
@@ -114,6 +112,7 @@
 }
 
 .user_heding {
+  z-index: 1;
   font-size: 2rem;
   width: 100%;
   padding: 1rem 0;
@@ -243,5 +242,34 @@ header p {
   color: #9090ff;
   cursor: pointer;
   font-size: 1.2rem;
+}
+
+.pin {
+  position: relative;
+}
+
+.pin .pin_container {
+  bottom: 2rem;
+  left: -10px;
+  display: table-row;
+  position: absolute;
+  display: none;
+  -webkit-transition: 0.4s all ease-out;
+  transition: 0.4s all ease-out;
+}
+
+.pin .pin_container i {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  background-color: #f4caff;
+  padding: 0.8rem 0.9rem;
+  border-radius: 50px;
+  color: #762cff;
+}
+
+.pin_container.showpin {
+  display: block;
+  -webkit-transition: 0.4s all ease-out;
+  transition: 0.4s all ease-out;
 }
 /*# sourceMappingURL=main.css.map */

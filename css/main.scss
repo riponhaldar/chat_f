@@ -47,13 +47,11 @@
 				cursor: pointer;
 				display: block;
 				position: absolute;
-				right: -20px;
-				width: 50px;
-				height: 70px;
-				top: 47%;
+				right: -30px;
+				top: 0;
+				z-index: 0;
 				font-size: 3rem;
-				background: rgb(255, 198, 252);
-				border-radius: 50%;
+				color: rgb(104, 104, 104);
 			}
 		}
 	}
@@ -66,6 +64,7 @@
 }
 
 .user_heding {
+	z-index: 1;
 	font-size: 2rem;
 	width: 100%;
 	padding: 1rem 0;
@@ -165,4 +164,32 @@ header {
 		cursor: pointer;
 		font-size: 1.2rem;
 	}
+}
+.pin {
+	position: relative;
+	.pin_container {
+		// background: #000;
+		bottom: 2rem;
+		left: -10px;
+		display: table-row;
+		position: absolute;
+		display: none;
+
+		transition: 0.4s all ease-out;
+		i {
+			margin-bottom: 1rem;
+			font-size: 1.5rem;
+			background-color: rgb(244, 202, 255);
+			padding: 0.8rem 0.9rem;
+			border-radius: 50px;
+
+			color: rgb(118, 44, 255);
+		}
+	}
+}
+
+.pin_container.showpin {
+	display: block;
+
+	transition: 0.4s all ease-out;
 }
