@@ -1,0 +1,247 @@
+@media screen and (max-width: 993px) {
+  .user_container {
+    position: absolute;
+    width: 300px;
+    min-width: 300px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    left: -290px;
+    height: 80vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-transition: 0.4s all ease-out;
+    transition: 0.4s all ease-out;
+  }
+}
+
+.user_container.shows {
+  left: 0;
+  -webkit-transition: 0.4s all ease-out;
+  transition: 0.4s all ease-out;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.heading {
+  background: #eff6ff;
+  padding: 2rem;
+}
+
+.heading p {
+  color: black;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+  z-index: 1;
+  width: 100%;
+  max-width: 1300px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+@media screen and (max-width: 993px) {
+  .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.container_box {
+  width: 100%;
+  height: 80vh;
+  background: #f9fafb;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container_box .user_container {
+  width: 300px;
+  min-width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #ffc6fc;
+}
+
+.container_box .user_container .toggle {
+  display: none;
+}
+
+@media screen and (max-width: 993px) {
+  .container_box .user_container .toggle {
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    right: -20px;
+    width: 50px;
+    height: 70px;
+    top: 47%;
+    font-size: 3rem;
+    background: #ffc6fc;
+    border-radius: 50%;
+  }
+}
+
+.container_box .chat_container {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.user_heding {
+  font-size: 2rem;
+  width: 100%;
+  padding: 1rem 0;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #efd4ff;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #000;
+}
+
+.users {
+  z-index: 1;
+  width: 100%;
+  overflow: auto;
+}
+
+.users .user {
+  background: #ffcef9;
+  cursor: pointer;
+  margin-bottom: 0.4rem;
+}
+
+.users .user p {
+  padding: 1rem;
+  text-align: center;
+}
+
+header {
+  background: #ffe8ff;
+  border-bottom: 1px solid #ccc;
+  padding: 1rem;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header p {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.people_chat {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem;
+  overflow: auto;
+}
+
+.people_chat::before {
+  content: '';
+  margin-bottom: auto;
+}
+
+.people_chat .people {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  max-width: 70%;
+}
+
+.people_chat .people .sms {
+  background: #ffdada;
+  -webkit-box-shadow: 0 5px 15px -5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5px 15px -5px rgba(0, 0, 0, 0.1);
+  padding: 10px 5px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.people_chat .people .time {
+  text-align: right;
+  color: #999;
+  font-size: 0.75em;
+}
+
+.people_chat .me {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.people_chat .me .sms {
+  background: #fcd5ff;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #f3e0ff;
+  padding: 0 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: flex;
+  height: 4rem;
+}
+
+.footer div {
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.footer input {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  border-radius: 50px;
+  border: none;
+  padding: 0.6rem 20px;
+  margin-right: 0.5rem;
+}
+
+.footer .send {
+  color: #9090ff;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+/*# sourceMappingURL=main.css.map */

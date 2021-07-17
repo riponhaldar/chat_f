@@ -1,0 +1,18 @@
+@import './media';
+
+.user_container {
+	@include mobile {
+		position: absolute;
+		width: 300px;
+		min-width: 300px;
+		display: flex;
+		left: -290px;
+		height: 80vh;
+		flex-direction: column;
+		transition: 0.4s all ease-out;
+	}
+}
+.user_container.shows {
+	left: 0;
+	transition: 0.4s all ease-out;
+}
