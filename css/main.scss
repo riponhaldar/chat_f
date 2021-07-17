@@ -42,7 +42,6 @@
 		flex-direction: column;
 		background: #e0e7ff;
 		.toggle {
-			// color: #000;
 			display: none;
 			i {
 				color: #818cf8;
@@ -52,7 +51,7 @@
 				display: block;
 				position: absolute;
 				right: -30px;
-				top: 0;
+				top: 10px;
 				z-index: 0;
 				font-size: 3rem;
 				color: rgb(104, 104, 104);
@@ -123,9 +122,9 @@ header {
 		align-self: flex-start;
 		max-width: 70%;
 		.sms {
-			background: #ddd6fe;
+			background: #c4b5fd;
 			box-shadow: 0 5px 15px -5px rgba(0, 0, 0, 0.1);
-			padding: 10px 5px;
+			padding: 0.8rem 0.6rem;
 			margin-bottom: 10px;
 			border-radius: 5px;
 		}
@@ -138,7 +137,7 @@ header {
 	.me {
 		align-self: flex-end;
 		.sms {
-			background: #fdf2f8;
+			background: #a5b4fc;
 		}
 	}
 }
@@ -154,6 +153,9 @@ header {
 		margin-right: 0.5rem;
 		font-size: 1.5rem;
 		cursor: pointer;
+	}
+	.emoji {
+		color: rgb(146, 184, 255);
 	}
 	input {
 		flex: 1;
