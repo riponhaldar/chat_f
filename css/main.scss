@@ -43,11 +43,9 @@
 		flex-direction: column;
 		background: #e0e7ff;
 		// scroll bar
-		scrollbar-width: thin; /* "auto" or "thin" */
+		scrollbar-width: thin;
 		scrollbar-color: #a5b4fc #c4b5fd;
-		&:-webkit-scrollbar {
-			width: 5px; /* width of the entire scrollbar */
-		}
+
 		.toggle {
 			display: none;
 			i {
@@ -67,6 +65,7 @@
 	}
 	.chat_container {
 		flex: 1;
+		width: 100%;
 		display: flex;
 		flex-direction: column;
 		scrollbar-width: thin;
@@ -119,6 +118,7 @@ header {
 // people chat
 .people_chat {
 	flex: 1;
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	padding: 1rem;
@@ -141,7 +141,7 @@ header {
 		.time {
 			position: relative;
 			top: -8px;
-			text-align: right;
+			text-align: left;
 			font-size: 0.7rem;
 			color: rgb(144, 193, 248);
 		}
@@ -152,7 +152,7 @@ header {
 			background: #a5b4fc;
 		}
 		.time {
-			text-align: left;
+			text-align: right;
 			font-size: 0.7rem;
 			color: rgb(144, 193, 248);
 		}
@@ -170,6 +170,9 @@ header {
 		margin-right: 0.5rem;
 		font-size: 1.5rem;
 		cursor: pointer;
+		@include mobile {
+			margin-right: 0.4rem;
+		}
 	}
 	.emoji {
 		color: rgb(146, 184, 255);
@@ -208,7 +211,6 @@ header {
 			background-color: #ddd6fe;
 			padding: 0.6rem 0.7rem;
 			border-radius: 50px;
-
 			color: #a78bfa;
 		}
 	}
@@ -216,6 +218,5 @@ header {
 
 .pin_container.showpin {
 	display: block;
-
 	transition: 0.4s all ease-out;
 }

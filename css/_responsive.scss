@@ -16,3 +16,13 @@
 	left: 0;
 	transition: 0.4s all ease-out;
 }
+.people_chat {
+	@include mobile {
+		.sms {
+			font-size: 0.8rem;
+		}
+		.time {
+			font-size: 0.8rem;
+		}
+	}
+}
